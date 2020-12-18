@@ -1,0 +1,37 @@
+GET  http://127.0.0.1:8000/api/testeQuery
+GET  http://127.0.0.1:8000/api/estado
+GET  http://127.0.0.1:8000/api/municipio
+GET  http://127.0.0.1:8000/api/municipio/1
+GET  http://127.0.0.1:8000/api/estado/1
+
+
+POST  http://127.0.0.1:8000/api/estado
+{
+	"descricao":"Rio de Janeiro",
+	"uf":"RJ"
+}
+
+
+POST http://127.0.0.1:8000/api/municipio
+{
+	"descricao":"cidade2",
+	"area":"1236",
+	"populacao":"1269",
+	"estado":1
+}
+
+
+PUT http://127.0.0.1:8000/api/estado/1
+{
+	"descricao":"ACRES",
+	"uf":"Acc"
+}
+
+PUT http://127.0.0.1:8000/api/municipio/1
+{
+	"descricao":"Maríliao",
+	"area":"123",
+	"populacao":"1269"
+	
+	
+}
